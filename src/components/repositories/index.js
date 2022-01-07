@@ -1,4 +1,5 @@
 import React from "react";
+import { RepositoryItem } from "../repository-item";
 import * as S from "./styled";
 
 export const Repositories = () => {
@@ -11,8 +12,19 @@ export const Repositories = () => {
                 <S.WrapperTab>Starred</S.WrapperTab>
             </S.WrapperTabList>  
 
-            <S.WrapperTabPanel>Panel Repositories</S.WrapperTabPanel>
-            <S.WrapperTabPanel>Panel Starred</S.WrapperTabPanel>
+            <S.WrapperTabPanel>
+                <RepositoryItem 
+                name="API.Curso" 
+                linkToRepo="https://api.github.com/repos/Pydgey/API.Curso"
+                fullName="Pydgey/API.Curso"/>
+            </S.WrapperTabPanel>
+
+            <S.WrapperTabPanel>
+                <RepositoryItem 
+                name="ApiMusica" 
+                linkToRepo="https://github.com/Pydgey/ApiMusica"
+                fullName="Pydgey/ApiMusica"/>
+            </S.WrapperTabPanel>
 
         </S.WrapperTabs>
     );
